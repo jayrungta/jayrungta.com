@@ -7,7 +7,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/jayrungta.com`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Jay Rungta',
   subHeading: 'Software Development with Design Thinking',
   // social
