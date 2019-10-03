@@ -15,11 +15,11 @@ const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
-        <div className="logo">
+        {/* <div className="logo">
           <span className="icon fa-rocket"></span>
         </div>
         <h2>{config.heading}</h2>
-        <p>{config.subHeading}</p>
+        <p>{config.subHeading}</p> */}
       </div>
     </section>
 
@@ -30,28 +30,24 @@ const IndexPage = () => (
             <img src={pic1} alt="" />
           </a>
           <div className="content">
-            <h2 className="major">Magna arcu feugiat</h2>
+            {/* <h2 className="major">Software Development</h2> */}
             <p>
-              Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-              turpis ante, nullam sit amet turpis non, sollicitudin posuere
-              urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-              dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-              cursus.
+              <b>Hi, I am Jay. </b> A full-time software engineer who loves JavaScript, and all things Web. I'm keen on building end-user products using design thinking and agile methodologies. Also passionate about AI and machine learning, I am always looking for ways to use them for solving real world problems.
             </p>
-            <a href="/#" className="special">
+            {/* <a href="/#" className="special">
               Learn more
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
 
-      <section id="two" className="wrapper alt spotlight style2">
+      {/* <section id="two" className="wrapper alt spotlight style2">
         <div className="inner">
           <a href="/#" className="image">
             <img src={pic2} alt="" />
           </a>
           <div className="content">
-            <h2 className="major">Tempus adipiscing</h2>
+            <h2 className="major">Section Two</h2>
             <p>
               Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
               turpis ante, nullam sit amet turpis non, sollicitudin posuere
@@ -72,7 +68,7 @@ const IndexPage = () => (
             <img src={pic3} alt="" />
           </a>
           <div className="content">
-            <h2 className="major">Nullam dignissim</h2>
+            <h2 className="major">Section Three</h2>
             <p>
               Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
               turpis ante, nullam sit amet turpis non, sollicitudin posuere
@@ -85,11 +81,11 @@ const IndexPage = () => (
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="four" className="wrapper alt style1">
         <div className="inner">
-          <h2 className="major">Vitae phasellus</h2>
+          <h2 className="major">Projects</h2>
           <p>
             Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
             Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
