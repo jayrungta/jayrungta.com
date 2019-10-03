@@ -26,27 +26,31 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-e8919798d4c40608ee0d.js"
+    "url": "webpack-runtime-80eb6b01205e7493c0d2.js"
   },
   {
-    "url": "commons.4ca1cfaaab949d003dda.css"
+    "url": "commons.2cbba260a422e7326fe0.css"
   },
   {
-    "url": "commons-3c793fa31175ee974667.js"
+    "url": "commons-49ef219471915b89b713.js"
   },
   {
-    "url": "app-32393b7c5861647606b2.js"
+    "url": "app-e12fdcad5ac75f924223.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-5811cb4277cb8c159893.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "7565c8e1a2add70a87ac1a0b2f1672ca"
+    "revision": "5053d28f71d24f19ebe6caa520047f03"
+  },
+  {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "d51f7e3f7d0537c02d5af8e9b83408b5"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "2066897874c8e299b7f449a105cd3349"
+    "revision": "0602b044ba10fa21a36fe2bcf3bc7068"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -65,12 +69,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/jayrungta.com`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-32393b7c5861647606b2.js`))) {
+  if (!resources || !(await caches.match(`/jayrungta.com/app-e12fdcad5ac75f924223.js`))) {
     return await fetch(event.request)
   }
 
@@ -83,7 +87,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/jayrungta.com/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
